@@ -1,0 +1,40 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "prompts",
+  "title": "Prompts",
+  "description": "Manage commonly used prompts",
+  "icon": "logo.png",
+  "author": "huajianmao",
+  "license": "MIT",
+  "dependencies": {
+    "@raycast/api": "^1.54.0",
+    "@raycast/utils": "^1.8.0"
+  },
+  "devDependencies": {
+    "@raycast/eslint-config": "^1.0.6",
+    "@types/node": "^20.3.1",
+    "@types/react": "^18.2.14",
+    "eslint": "^8.43.0",
+    "prettier": "^2.8.8",
+    "typescript": "^5.1.3"
+  },
+  "scripts": {
+    "build": "ray build -e dist",
+    "dev": "ray develop",
+    "fix-lint": "ray lint --fix",
+    "lint": "ray lint",
+    "publish": "ray publish"
+  },
+  "categories": [
+    "Productivity"
+  ],
+  "commands": [
+    {
+      "name": "index",
+      "title": "Search Prompts",
+      "description": "Compose a prompt with templates",
+      "mode": "view"
+    }
+  ],
+  "preferences": []
+}
